@@ -1,0 +1,35 @@
+hard:
+  dragon:
+    min_dmg: 5
+    max_dmg: 20
+    hit_points: 100
+  hero:
+    min_dmg: 1
+    max_dmg: 10
+    hit_points: 80
+    potion_strength: 30
+    amount_of_potions: 1
+
+medium:
+  dragon:
+    min_dmg: 5
+    max_dmg: 20
+    hit_points: 80
+  hero:
+    min_dmg: 5
+    max_dmg: 20
+    hit_points: 80
+    potion_strength: 10
+    amount_of_potions: 3
+
+easy:
+  dragon:
+    min_dmg: 1
+    max_dmg: 10
+    hit_points: 80
+  hero:
+    min_dmg: 5
+    max_dmg: 20
+    hit_points: 100
+    potion_strength: 30
+    amount_of_potions: 3
