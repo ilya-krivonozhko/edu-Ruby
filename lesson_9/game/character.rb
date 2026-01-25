@@ -14,6 +14,7 @@ class Character
 
     damage = rand(@min_dmg..@max_dmg)
     target.receive_damage damage
+    after_attack
     damage
   end
 
@@ -22,4 +23,6 @@ class Character
   def receive_damage(damage)
     @hit_points -= damage
   end
+
+  def after_attack; end
 end

@@ -9,6 +9,11 @@ class Hero < Character
     super(min_dmg, max_dmg, hit_points)
     @potion_strength = potion_strength
     @amount_of_potions = amount_of_potions
+    @drunk_potion = false
+  end
+
+  def min_dmg
+    @drunk_potion ? 0 : self.class.min_dmg
   end
 
   def drink_potion
@@ -16,5 +21,12 @@ class Hero < Character
 
     @amount_of_potions -= 1
     @hit_points += @potion_strength
+    @drunk_potion = true
+  end
+
+  protected
+
+  def after_attack
+    @drunk_potion = false if @drunk_potion
   end
 end
