@@ -22,6 +22,7 @@ Gem::Specification.new do |spec|
   spec.require_paths    = ['lib']
 
   spec.add_dependency 'faraday', '~> 2.14'
+  spec.add_dependency 'json', '~> 2.18'
   spec.add_dependency 'zeitwerk', '~> 2.7'
 
   spec.metadata = {
