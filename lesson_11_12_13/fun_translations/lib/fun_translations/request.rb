@@ -20,12 +20,14 @@ module FunTranslations
              else
                JSON.parse(raw_response.body, symbolize_names: true)
              end
-      respond_with_error(raw_response.status, body) if !raw_response.success?
+      respond_with_error(raw_response.status, body) unless raw_response.success?
       body[:contents]
     end
 
-    def respond_with_error
-      # ...
+    def respond_with_error(code, body)
+      raise(FunTranslations::Error, body) unless FunTranslations::Error::ERRORS.key?(code)
+
+      raise Error::ERRORS[code].from_response(body)
     end
   end
 end
