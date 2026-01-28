@@ -1,0 +1,15 @@
+plugins:
+  - rubocop-rspec
+
+Metrics/BlockLength:
+  Max: 90
+Style/Documentation:
+  Enabled: false
+Metrics/MethodLength:
+  Max: 50
+Metrics/AbcSize:
+  Max: 50
+RSpec/MultipleExpectations:
+  Max: 5
+RSpec/ExampleLength:
+  Max: 30

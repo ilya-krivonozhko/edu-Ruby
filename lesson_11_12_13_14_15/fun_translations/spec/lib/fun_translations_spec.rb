@@ -14,6 +14,7 @@ RSpec.describe FunTranslations do
       expect(client.token).to eq('token')
     end
   end
+
   describe 'VERSION' do
     it 'is a valid gem version' do
       expect(FunTranslations::VERSION).to be_a(String)

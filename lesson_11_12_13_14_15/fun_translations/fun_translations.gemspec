@@ -7,8 +7,8 @@ Gem::Specification.new do |spec|
   spec.version               = FunTranslations::VERSION
   spec.authors               = ['Ilya Krivonozhko']
   spec.email                 = ['ilya.krivonozhko@gmail.com']
-  spec.summary               = ''
-  spec.description           = ''
+  spec.summary               = 'Ruby client for the Fun Translations API'
+  spec.description           = 'A Ruby gem that provides a simple interface for interacting with the FunTranslations.com API, including support for authenticated requests and paid subscription plans.' # rubocop:disable Layout/LineLength
   spec.homepage              = 'https://github.com/ilya-krivonozhko/fun_translations'
   spec.license               = 'MIT'
   spec.platform              = Gem::Platform::RUBY
@@ -26,6 +26,10 @@ Gem::Specification.new do |spec|
   spec.add_dependency 'zeitwerk', '~> 2.7'
 
   spec.add_development_dependency 'rspec', '~> 3.13'
+  spec.add_development_dependency 'rubocop', '~> 1.82'
+  spec.add_development_dependency 'rubocop-rspec', '~> 3.9'
+  spec.add_development_dependency 'simplecov', '~> 0.21'
+  spec.add_development_dependency 'webmock', '~> 3.26'
 
   spec.metadata = {
     'rubygems_mfa_required' => 'true'
