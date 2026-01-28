@@ -25,12 +25,6 @@ Gem::Specification.new do |spec|
   spec.add_dependency 'json', '~> 2.18'
   spec.add_dependency 'zeitwerk', '~> 2.7'
 
-  spec.add_development_dependency 'rspec', '~> 3.13'
-  spec.add_development_dependency 'rubocop', '~> 1.82'
-  spec.add_development_dependency 'rubocop-rspec', '~> 3.9'
-  spec.add_development_dependency 'simplecov', '~> 0.21'
-  spec.add_development_dependency 'webmock', '~> 3.26'
-
   spec.metadata = {
     'rubygems_mfa_required' => 'true'
   }
